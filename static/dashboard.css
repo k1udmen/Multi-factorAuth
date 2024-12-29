@@ -1,0 +1,93 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(45deg, #ff6f91, #f8b0c1);
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: 900px;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.header {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.logout-btn {
+  background-color: #ff6f91;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.logout-btn:hover {
+  background-color: #f8b0c1;
+  cursor: pointer;
+}
+
+.content {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.content h2 {
+  font-size: 27px;
+  margin-bottom: 20px;
+  color: #6f42c1;
+}
+
+.data-card {
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: #333;
+  font-size: 18px;
+}
+
+.card1 {
+  background: #f2c0f9;
+}
+
+.card2 {
+  background: #e2aaff;
+}
+
+.card3 {
+  background: #d4c6f9;
+}
+
+.card4 {
+  background: #c1b3ff;
+}
+
+footer {
+  text-align: center;
+}
+
+footer .back-link {
+  font-size: 16px;
+  color: #6f42c1;
+  text-decoration: none;
+}
+
+footer .back-link:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Verification</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='otp.css') }}">
+</head>
+<body>
+    <div class="otp-container">
+        <div class="otp-form">
+            <h2>OTP Verification</h2>
+
+            {% if error %}
+            <div class="error-message">
+                {{ error }}
+            </div>
+            {% endif %}
+
+            <form action="/otp" method="POST">
+                <div class="input-group">
+                    <label for="otp">Enter OTP</label>
+                    <input type="text" name="otp" required placeholder="Enter the OTP">
+                </div>
+
+                <button type="submit" class="otp-btn">Confirm OTP</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
